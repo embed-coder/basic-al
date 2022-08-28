@@ -1,0 +1,15 @@
+*
+!.gitignore
+!*.c
+!*.cpp
+!*.h
+!*.txt
+
+# source dir
+!include
+!coding-interview
+!doughnut
+!hellomake
+!inter-process
+!sortcpp
+!tictactoecpp

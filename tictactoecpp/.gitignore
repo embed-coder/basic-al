@@ -1,0 +1,13 @@
+# ignore all
+*
+
+# source files
+!.gitignore
+!*.c
+!*.cpp
+!*.h
+!*.txt
+!*.html
+
+# source dirs
+!include
