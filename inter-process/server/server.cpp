@@ -24,7 +24,7 @@
 #include <event2/util.h>
 #include <event2/event.h>
 
-static const char MESSAGE[] = "Hello, World!\n";
+static const char MESSAGE[] = "Hello from server!\n";
 
 static const int PORT = 9995;
 

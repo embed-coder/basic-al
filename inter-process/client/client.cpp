@@ -14,11 +14,9 @@
 
 int main(int c, char **v)
 {
-    const char query[] =
-        "GET / HTTP/1.0\r\n"
-        "Host: www.google.com\r\n"
-        "\r\n";
-    const char hostname[] = "www.google.com";
+    const char query[] = "Hello from client";
+    // const char hostname[] = "www.google.com";
+    const char hostname[] = "localhost";
     struct sockaddr_in sin;
     struct hostent *h;
     const char *cp;
@@ -50,7 +48,7 @@ int main(int c, char **v)
 
     /* Connect to the remote host. */
     sin.sin_family = AF_INET;
-    sin.sin_port = htons(80);
+    sin.sin_port = htons(9995);
     sin.sin_addr = *(struct in_addr *)h->h_addr;
     if (connect(fd, (struct sockaddr *)&sin, sizeof(sin)))
     {
